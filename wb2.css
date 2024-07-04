@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    background-image: url('https://i.pinimg.com/564x/9e/57/80/9e5780a6aa7207fac4be6e549dfc0c78.jpg');
+    background-position: center center;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background: linear-gradient(5deg, rgb(118, 99, 204),rgb(226, 153, 165)); */
+  
+} 
+:root{
+    --heading-col: #82005b;
+    --cnt-col:rgb(0, 0, 0);
+}
+header{
+    height:10vh;
+}
+h2{
+    font-size: 40px;
+    font-weight: 800px;
+    color:var(--heading-col);
+    text-align: center;
+}
+.cnt1{
+    position:absolute;
+    left:18%;
+    top:15%;
+   
+    /* background: linear-gradient(45deg, rgb(124, 103, 213),rgb(255, 192, 213)); */
+}
+h3{
+    font-weight: 700;
+    font-size:30px;
+    font-style: bold;
+    color:var(--cnt-col);
+    margin-bottom:10px;
+    /* text-shadow:2px 1px 4px rgb(254, 197, 254) ; */
+    text-align: center;
+}
+p{
+    font-size: 15px;
+    font-weight: 400px;
+    color:var(--cnt-col);
+    word-spacing: 2px;
+    line-height: 1.2rem;
+}
+.cnt2{
+    position:absolute;
+    right:18%;
+    top:42%;  
+    
+}
+.cnt3{
+    position:absolute;
+    left:18%;
+    bottom:5%; 
+    
+}
+.cnt1,.cnt2,.cnt3{
+    padding:10px 10px 10px 20px ;
+    overflow: hidden;
+    height:28vh;
+    width:60vh;
+     z-index:111; 
+     font-weight: 500;
+     border-radius: 20px;
+   
+    background:#82005b ;
+     
+    
+}
+.cnt1,.cnt3{
+              border-bottom:2px solid var(--cnt-col);
+              border-left :2px solid var(--cnt-col);
+              /* border-radius: 20%; */
+              box-shadow:2px 2px 2px rgba(0, 0, 0, 0.372);
+              border-top:2px solid var(--cnt-col);
+              border-right :2px solid var(--cnt-col);
+}
+.cnt1:hover,.cnt3:hover{
+    transform:scale(1.1);
+    cursor: pointer;
+    
+}
+.cnt2{
+    border-right :2px solid var(--cnt-col);
+    border-bottom:2px solid var(--cnt-col);
+    border-top:2px solid var(--cnt-col);
+    border-left :2px solid var(--cnt-col);
+    box-shadow:4px 4px 4px rgba(0, 0, 0, 0.372);
+    
+}
+.cnt2:hover{
+    cursor: pointer;
+    transform:scale(1.1);
+   
+    
+}
+/* h3::after{
+    content:'';
+    position: absolute;
+    width:50px;
+    height: 2px;
+    background-color:var(--cnt-col);
+    top:30%;
+    left:15px;
+} */
+
+.sq-flex{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    /* padding-bottom:40px ; */
+    /* background-color: aqua; */
+}
+.sq{
+      position: relative;
+        background: linear-gradient(45deg,#8e0063,rgb(173, 93, 197));
+        width:450px;
+        height: 420px; 
+        z-index:-5;
+}
+.left-side-bar{
+    position: fixed;
+    height:100vh;
+    width: 100px;
+    margin-top: 0;
+    margin-right: 90%;
+    background-color:#82005b ;
+}
+.right-side-bar{
+    position: fixed;
+    height:100vh;
+    width: 150px;
+    background-color: #82005b;
+    margin-left:92%;
+    margin-top: 0px;
+}
+    /* margin-left:90%;
+    content:'';
+    position: absolute;
+    width:50px;
+    height:50px;
+    background: rgb(41, 2, 77); */
+} */
+/* #bl1{
+    position: absolute;/*other than static and pos: req when z-index must be given*/
+   /* right:80%;
+    top:-10%;
+    left:10px;
+    bottom: 5px;
+    z-index: -5;
+} */ 
+/* #blob1{
+    position:absolute;
+    margin-left:50%;
+    top:0;
+    width:200px;
+    height:150px;
+} */
+
+
