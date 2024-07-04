@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins';
+}
+:root{
+    /*maintaining consistency in all elem*/
+    --blk-color:#000000;
+    --unq-color: #00fffb;
+    --cnt-color:white;
+}
+body{
+    /*background: url('https://static.vecteezy.com/system/resources/previews/002/382/844/non_2x/abstract-geometric-shape-colorful-gradient-background-free-vector.jpg');
+    background-position: center center;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;
+    background-size: cover; */
+    overflow: hidden;
+    background-color: #000000;
+    height: 100vh;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/*.section{
+    height:100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}*/
+.heading{
+    position:fixed;
+    top:0;
+    left:0;
+       width:100%;
+    height:max-height(100px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+    padding:5px;
+    letter-spacing: 2px;
+    z-index: 111;
+    
+}
+.logoname{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoname img{
+    margin-right:15px;
+}
+.name{
+font-size:30px;
+font-weight: 500px;
+color:var(--unq-color);
+}
+.navItems{
+    list-style-type: none;
+
+}
+.navItems li{
+    display: inline-block;
+    margin:20px 10px;
+}
+.navItems li a{
+    text-decoration: none;
+    color:var(--cnt-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom:5px;
+    font-size: 20px;
+}
+.navItems  a:hover {
+    /* border-bottom: 1px solid var(--act-color); */
+   /* text-shadow: 0 0 25px var(--act-color);not working */
+    color:var(--unq-color);
+}
+/* .navItems a:visited {
+    background-color:black;
+} */
+.content{
+    position: absolute;
+    width:45%;
+    top:40%;
+    left:20%;
+    letter-spacing: 1px;
+color:var(--cnt-color);
+font-weight: 400px;
+
+}
+h3{
+    margin-bottom:10px;
+    font-weight: 500px;
+    font-size: 60px;
+    margin-bottom: 20px;
+    
+}
+span{
+    color:var(--unq-color);
+    /*text-shadow: 0 15px var(--text-color) 0;*/
+}
+p{
+    font-weight: 400px;
+    font-size: 30px;
+    line-height: 2rem;
+}
+.images{
+    position: absolute;
+    height:80%;
+    overflow: hidden;
+    top:20%;
+    left:60%;
+    right:2%;
+    bottom: 100px;
+}
+.girl{
+    position: absolute;
+    height: 100%;
+    width:350px;
+    transition: left 1ms;
+    z-index: 2;
+    transform: translateY(-30px);
+    /* mask image */
+}
+.shape{
+    position: absolute;
+    z-index: -5;
+    height:80%;
+    bottom:30px;
+}
+.girl:hover{
+    left:20px;
+}
+/* .images:hover .shape{
+    transform: rotate(15deg);
+} */
+.content::after{
+    position: absolute;
+    content:'';
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-left:70%;
+   margin-bottom:-5%;
+    background: linear-gradient(45deg,rgb(125, 255, 251),rgb(28, 143, 154));
+    z-index: -1;
+}
+.content::before{
+    position: absolute;
+    content:'';
+    width:350px;
+    height: 350px;
+    border-radius: 50%;
+   margin-left:-60%;
+   margin-bottom:-15%;
+    background: linear-gradient(5deg, rgb(28, 143, 154),rgb(125, 255, 251));
+    z-index: -1;
+}
+/* .images::before{
+    position: absolute;
+    content:'';
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    left:-40%;
+    bottom:80px;
+    background: linear-gradient(45deg, rgb(28, 143, 154),rgb(125, 255, 251));
+    z-index: -1;
+} */
+.heading::after{
+    position: absolute;
+    content:'';
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right:-2px;
+    margin-left:86%;
+    margin-top:-20px;
+    background: linear-gradient(45deg, rgb(28, 143, 154),rgb(125, 255, 251));
+    z-index:-1;
+}
+/*...............................PAGE 2......................*/
+@media screen and (max-width:850px) {
+    .heading::after{
+        content: '';
+        width: 0;
+        height: 0;
+        display: none;
+        visibility: hidden;
+    }
+    
+} 
