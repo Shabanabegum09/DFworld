@@ -3,6 +3,7 @@
     margin:0;
     padding:0;
     font-family: 'Poppins';
+    scroll-behavior: smooth;
 }
 :root{
     /*maintaining consistency in all elem*/
@@ -10,16 +11,22 @@
     --unq-color: #00fffb;
     --cnt-color:white;
 }
+html{
+    overflow-x: hidden;
+}
 body{
     /*background: url('https://static.vecteezy.com/system/resources/previews/002/382/844/non_2x/abstract-geometric-shape-colorful-gradient-background-free-vector.jpg');
     background-position: center center;
     background-repeat:no-repeat ;
     background-attachment: fixed;
     background-size: cover; */
-    overflow: hidden;
+    /* overflow-y: scroll; */
     background-color: #000000;
     height: 100vh;
     font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+section{
+    min-height: 100vh;
 }
 /*.section{
     height:100vh;
@@ -37,7 +44,7 @@ body{
     position:fixed;
     top:0;
     left:0;
-       width:100%;
+    width:100%;
     height:max-height(100px);
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +92,7 @@ color:var(--unq-color);
 /* .navItems a:visited {
     background-color:black;
 } */
-.content{
+.about-content{
     position: absolute;
     width:45%;
     top:40%;
@@ -95,7 +102,7 @@ color:var(--cnt-color);
 font-weight: 400px;
 
 }
-h3{
+.about-intro{
     margin-bottom:10px;
     font-weight: 500px;
     font-size: 60px;
@@ -106,12 +113,12 @@ span{
     color:var(--unq-color);
     /*text-shadow: 0 15px var(--text-color) 0;*/
 }
-p{
+.about-para{
     font-weight: 400px;
     font-size: 30px;
     line-height: 2rem;
 }
-.images{
+.about-images{
     position: absolute;
     height:80%;
     overflow: hidden;
@@ -125,13 +132,13 @@ p{
     height: 100%;
     width:350px;
     transition: left 1ms;
-    z-index: 2;
+    z-index: -5;
     transform: translateY(-30px);
     /* mask image */
 }
 .shape{
     position: absolute;
-    z-index: -5;
+    z-index: 2;
     height:80%;
     bottom:30px;
 }
@@ -141,7 +148,7 @@ p{
 /* .images:hover .shape{
     transform: rotate(15deg);
 } */
-.content::after{
+.about-content::after{
     position: absolute;
     content:'';
     width:250px;
@@ -152,7 +159,7 @@ p{
     background: linear-gradient(45deg,rgb(125, 255, 251),rgb(28, 143, 154));
     z-index: -1;
 }
-.content::before{
+.about-content::before{
     position: absolute;
     content:'';
     width:350px;
@@ -196,4 +203,102 @@ p{
         visibility: hidden;
     }
     
-} 
+}
+/*----------- 2nd page ----------------*/
+.ed-grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ed-heading{
+    text-align: center;
+    color: #00fffb;
+    font-size: 60px;
+    margin-bottom: 40px;
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+    width:900px;
+    height: 70vh;
+    grid-column-gap:10px;
+    padding: ;
+}
+
+.date-left{
+    text-align:right ;
+    padding-right: 15px;
+}
+.date-right{
+    text-align:left ;
+    padding-left: 15px;
+}
+.middle-clm{
+    background-color: #ffffff;
+}
+.ed-cnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    background-color: #00fffb;
+    padding-left: 20px;
+    border-radius: 20px;
+    height:150px;
+    border:0.5px solid #00fffb;
+    box-shadow: 2px 2px 2px #00fffb ;
+}
+.date-right,.date-left{
+    padding-top: 25px;
+    
+    font-size: 20px;
+    font-weight: 500;
+    color: #00fffb;
+}
+.ed-subheading{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.ed-subcnt{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5rem;
+
+}
+#griditem2{
+    position: relative;
+}
+.point-left{
+    position: absolute;
+    top:48px;
+    background-color:#00fffb;
+    width:14px;
+    height: 14px;  
+    border-radius: 50%;
+    left:-16px; 
+}
+#griditem5{
+    position: relative;
+}
+.point-right{
+    position: absolute;
+    top:48px;
+    background-color:#00fffb;
+    width:14px;
+    height: 14px;  
+    border-radius: 50%; 
+    right: -16px;
+}
+#griditem8{
+    position: relative;
+}
+.point-left{
+    position: absolute;
+    top:48px;
+    background-color:#00fffb;
+    width:14px;
+    height: 14px;  
+    border-radius: 50%;
+    left:-16px; 
+}
