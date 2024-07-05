@@ -29,6 +29,7 @@ body{
 section{
     min-height: 100vh;
 }
+
 /*.section{
     height:100vh;
     overflow-y: scroll;
@@ -226,7 +227,7 @@ span{
     grid-column-gap:10px;
     position: relative;
 }
-.ed-grid-box::after{
+#sdpage:target .ed-grid-box::after{
     content: '';
     position: absolute;
     width: 3px;
@@ -236,6 +237,17 @@ span{
     left: 50%;
     z-index: 1;
     animation: moveline 6s linear forwards;
+}
+.ed-grid-box::after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #00fffb;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    animation: moveline 3s linear forwards;
 }
 .date-left{
     text-align:right ;
@@ -434,14 +446,15 @@ span{
     gap:1rem;   
 }
 .fi{
-    border:2px solid #00ffffd6;
     border-radius: 20px;
-    box-shadow: 2px 2px 4px #00ffffd6;
+    border:2px solid #00ffffd6;
     padding: 20px;
-    color:#000000;
-    background-color: #00fffb;
+    color:#ffffff;
     width: 220px;
     height: 50vh;
+    background-color: #2d2d2d44;
+    box-shadow: 2px 2px 4px #00ffffd6;
+    
 }
 .cer-subheading
 {
@@ -456,6 +469,139 @@ span{
     text-align: justify;
 
 }
-#cer-flex1:hover{
+.fi:hover{
         transform: scale(1.05);
+        background-color: #00fffb; 
+        cursor: pointer;
+        color: #000000;
+}
+/* --------------------------SKILLS PAGE---------------------- */
+.s-grid-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height:80vh;
+}
+.skill-heading{
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+}
+.skills-grid-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    color: #ffffff;
+    width:80%;
+}
+.skill{
+    font-size:30px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:20px;
+}
+.s-bar{
+    margin-top:10px;
+    width:100%;
+    height:10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+.skillspage:target .html-bar{
+    width:0px;
+    height:10px;
+    animation: fill-html 2s linear forwards;
+    border-radius: 20px;
+}
+.skillspage:target .css-bar{
+    width:0px;
+    height:10px;
+    animation: fill-css 2s linear forwards;
+    border-radius: 20px;
+}
+.skillspage:target .js-bar{
+    width:0px;
+    height:10px;
+    animation: fill-js 2s linear forwards;
+    border-radius: 20px;
+}
+.skillspage:target .python-bar{
+    width:0px;
+    height:10px;
+    animation: fill-python 2s linear forwards;
+    border-radius: 20px;
+}
+.skillspage:target .java-bar{
+    width:0px;
+    height:10px;
+    animation: fill-java 2s linear forwards;
+    border-radius: 20px;
+}
+.skillspage:target .sql-bar{
+    width:0px;
+    height:10px;
+    animation: fill-sql 2s linear forwards;
+    border-radius: 20px;
+}
+@keyframes fill-html{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 80%;
+        background-color: #00fffb;
+
+    }
+}
+@keyframes fill-css{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 70%;
+        background-color: #00fffb;
+
+    }
+}
+@keyframes fill-js{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 80%;
+        background-color: #00fffb;
+
+    }
+}
+@keyframes fill-python{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 40%;
+        background-color: #00fffb;
+
+    }
+}
+@keyframes fill-java{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 40%;
+        background-color: #00fffb;
+
+    }
+}
+@keyframes fill-sql{
+    0%{
+        width:0%;
+    }
+    100%{
+        width: 70%;
+        background-color: #00fffb;
+
+    }
 }
