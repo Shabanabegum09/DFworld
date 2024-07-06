@@ -427,12 +427,10 @@ span{
     padding:100px;
 }
 .cer-grid-box{
-    display: flex;
+    display: grid;
     /* flex-direction:row; */
-    flex-wrap: nowrap;
+    grid-template-columns: repeat(3,1fr);
     padding:50px;
-    justify-content: flex-start;
-    align-items: center;
     gap:1rem;   
 }
 .fi{
@@ -440,8 +438,8 @@ span{
     border:2px solid #00ffffd6;
     padding: 20px;
     color:#00fffb;
-    width: 220px;
-    height: 50vh;
+    /* width: 220px; */
+    /* height: 50vh; */
     background-color: #2d2d2d44;
     box-shadow: 2px 2px 4px #00ffffd6;
     
@@ -542,7 +540,7 @@ span{
     100%{
         width: 80%;
         background-color: #00fffb;
-
+        /* box-shadow: 1px 1px 1px #00fffb ; */
     }
 }
 @keyframes fill-css{
