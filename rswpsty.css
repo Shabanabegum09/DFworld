@@ -238,17 +238,7 @@ span{
     z-index: 1;
     animation: moveline 6s linear forwards;
 }
-.ed-grid-box::after{
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 100%;
-    background-color: #00fffb;
-    top: 0;
-    left: 50%;
-    z-index: 1;
-    animation: moveline 3s linear forwards;
-}
+
 .date-left{
     text-align:right ;
     padding-right: 15px;
@@ -449,7 +439,7 @@ span{
     border-radius: 20px;
     border:2px solid #00ffffd6;
     padding: 20px;
-    color:#ffffff;
+    color:#00fffb;
     width: 220px;
     height: 50vh;
     background-color: #2d2d2d44;
