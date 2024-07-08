@@ -137,6 +137,7 @@ span{
     z-index: -5;
     transform: translateY(-30px);
     /* mask image */
+    filter: drop-shadow(5px 3px 5px #00fff0);
 }
 .shape{
     position: absolute;
