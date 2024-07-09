@@ -161,6 +161,13 @@ span{
    margin-bottom:-5%;
     background: linear-gradient(45deg,rgb(125, 255, 251),rgb(28, 143, 154));
     z-index: -1;
+    animation:obj1 3s linear infinite;
+}
+@keyframes obj1{
+    50%{
+    margin-top: 5%;
+    margin-left:68%;
+    }
 }
 .about-content::before{
     position: absolute;
