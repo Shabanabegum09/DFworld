@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS1</title>
+    <script>
+//    function hello(){
+//     const head=document.querySelector('h1');
+//     if (head.innerHTML==='HELLO')
+//     {
+//         head.innerHTML='GoodBye!';
+//     }
+//     else{
+//         head.innerHTML='HELLO';
+//     }
+//    } 
+let counter=0;
+function hello(){
+    counter++;
+    document.querySelector('h1').innerHTML=counter;
+}
+/*if we want to seperate js from html tags
+we can say document.querySelector('tag').onclick=count i.e.function name without parantheses/values */
+document.addEventListener('DOMContentLoaded',function(){
+    document.querySelector("button").onclick=function(){
+        
+    }
+})
+    </script>
+</head>
+<body>
+    
+        <h1>0</h1>
+        <button onclick="hello()">CLICK HERE </button>
+        
+</body>
+</html>

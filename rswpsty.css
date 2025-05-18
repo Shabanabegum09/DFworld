@@ -94,6 +94,12 @@ color:var(--unq-color);
 /* .navItems a:visited {
     background-color:black;
 } */
+.about-intro{
+    margin-bottom:10px;
+    font-weight: 500px;
+    font-size: 60px;
+    margin-bottom: 20px;   
+}
 .about-content{
     position: absolute;
     width:45%;
@@ -104,21 +110,15 @@ color:var(--cnt-color);
 font-weight: 400px;
 
 }
-.about-intro{
-    margin-bottom:10px;
-    font-weight: 500px;
-    font-size: 60px;
-    margin-bottom: 20px;
-    
-}
+
 span{
     color:var(--unq-color);
     /*text-shadow: 0 15px var(--text-color) 0;*/
 }
 .about-para{
     font-weight: 400px;
-    font-size: 30px;
-    line-height: 2rem;
+    font-size: 24px;
+    line-height: 3rem;
 }
 .about-images{
     position: absolute;
@@ -169,6 +169,14 @@ span{
     margin-left:68%;
     }
 }
+@keyframes obj2{
+    50%{
+        margin-top: 10%;
+    /* margin-left:1px; */
+    margin-right:68%;
+    
+    }
+}
 .about-content::before{
     position: absolute;
     content:'';
@@ -176,9 +184,10 @@ span{
     height: 350px;
     border-radius: 50%;
    margin-left:-60%;
-   margin-bottom:-15%;
+     margin-bottom:-15%;
     background: linear-gradient(5deg, rgb(28, 143, 154),rgb(125, 255, 251));
     z-index: -1;
+    animation:obj2 5s linear infinite;
 }
 /* .images::before{
     position: absolute;
@@ -200,8 +209,19 @@ span{
     margin-right:-2px;
     margin-left:86%;
     margin-top:-20px;
-    background: linear-gradient(45deg, rgb(28, 143, 154),rgb(125, 255, 251));
+    background: linear-gradient(95deg, rgb(28, 143, 154),rgb(125, 255, 251));
     z-index:-1;
+    animation:obj3 5s linear infinite;
+
+}
+@keyframes obj3{
+    50%{
+        /* margin-top: 5%;s */
+    margin-left:92%;
+    margin-bottom: 20px;
+    /* margin-right:10%; */
+    
+    }
 }
 /*...............................PAGE 2......................*/
 @media screen and (max-width:850px) {
@@ -236,17 +256,33 @@ span{
     position: relative;
 }
 #sdpage:target .ed-grid-box::after{
+    /* pos ab lets to right inside the container */
     content: '';
     position: absolute;
     width: 3px;
     height: 100%;
     background-color: #00fffb;
-    top: 0;
+    top: 10px;
     left: 50%;
     z-index: 1;
     animation: moveline 6s linear forwards;
 }
+/* #sdpage:target .ed-grid-box::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #00fffb;
+    top: 10px; /* Make sure to add 'px' */
+    left: 50%;
+    z-index: 1;
+    transition: height 0.6s linear; /* Use transition instead of animation */
+    height: 0; /* Start with height 0 */
+}
 
+.scrolled .ed-grid-box::after {
+    height: 100%; /* Set height to 100% when scrolled */
+} */
 .date-left{
     text-align:right ;
     padding-right: 15px;
@@ -281,11 +317,11 @@ span{
 /* @keyframes movedown {
     0%{
         opacity: 1;
-        margin-top: -30px;
+        margin-right: -90%;
     }
     100%{
         opacity: 1;
-        margin-top: 0px;
+        margin-right: 20px;
     }
     
 } */
@@ -467,9 +503,9 @@ span{
 }
 .fi:hover{
         transform: scale(1.05);
-        background-color: #00fffb; 
+        background-color: #52f2fbdc; 
         cursor: pointer;
-        color: #000000;
+        color: #ffffff;
 }
 /* --------------------------SKILLS PAGE---------------------- */
 .s-grid-container{
