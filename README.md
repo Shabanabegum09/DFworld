@@ -2,7 +2,7 @@
 ^_^ "When you do something you love, it doesn't feel like a burden."
 
 # 💫 About Me:
-👋 Hello Developers!!!<br><br>I'm Shabana Begum, a passionate B.Tech Final Year Student with a growing skill set in web development and design.<br><br>👩‍💻 What I Do:<br><br>🌐 Aspiring Web Developer<br>🎨 Basic Design Skills using Canva<br>💡 Knowledge in:<br>Java<br>HTML & CSS<br>Computer Networks (CN)<br>Databases (DB)<br>🚀 Currently:<br>Building websites<br>Exploring more about responsive web design<br>Open to learning and collaboration opportunities<br>^_^ "When you do something you love, it doesn't feel like a burden."
+👋 Hello Developers!!!<br><br>I'm Shabana Begum, a passionate B.Tech Final Year Student with a growing skill set in web development and design.<br><br>👩‍💻 What I Do:<br><br>🌐 Aspiring Web Developer<br>🎨 Basic Design Skills using Canva<br>💡 Knowledge in:<br>Java<br>HTML & CSS<br>Computer Networks (CN)<br>Databases (DB)<br>🚀 Currently:<br>Building websites<br>Exploring more about responsive web design<br>Open to learning and collaboration opportunities<br>
 
 
 ## 🌐 Socials:
