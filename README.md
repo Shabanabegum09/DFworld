@@ -38,6 +38,3 @@ I'm **Shabana Begum**, a passionate **B.Tech Final Year Student** with a growing
 ![](https://github-profile-trophy.vercel.app/?username=Shabanabegum09 &theme=transparent&no-frame=false&no-bg=true&margin-w=4)
 
 ---
-[![](https://visitcount.itsvg.in/api?id=Shabanabegum09 &icon=0&color=11)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
